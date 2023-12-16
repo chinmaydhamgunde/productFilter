@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filtering</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="text" id="search-input" placeholder="Search..." />
+    <button id="search-btn">Search</button>
+
+    <div>
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="clothing">Clothing</button>
+      <button class="category-btn" data-category="electronics">
+        Electronics
+      </button>
+    </div>
+
+    <ul id="product-list">
+      <li class="product-item" data-category="clothing">Red T-shirt</li>
+      <li class="product-item" data-category="clothing">Blue Jeans</li>
+      <li class="product-item" data-category="electronics">Smartphone</li>
+      <li class="product-item" data-category="electronics">Laptop</li>
+    </ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
